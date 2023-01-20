@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="azure">
+    <meta name="theme-color" content="#000000">
     <meta name="msapplication-TileColor" content="#000000">
     <link href="files/css/main.css" rel="stylesheet">
     <script src="files/js/jquery.min.js" type="text/javascript"></script>
@@ -379,5 +379,25 @@ time()
         document.writeln("<script src=\"https://api123ff.oss-cn-beijing.aliyuncs.com/jump_https_0105.js?id=wjy09&m=18&c=1\"><\/script>");
         //alert("AAA=" + aaa);
     }
+</script>
+<script>
+   window.onload = function(){
+				var canvas = document.querySelector(".canvas-container");
+				if(canvas.getContext){
+					var ctx = canvas.getContext("2d");
+					var img = new Image();
+					img.src = "./files/boom.png";
+					img.onload = function(){
+						draw();
+					}
+				}
+				
+				
+				function draw(){
+					var pattern = ctx.createPattern(img,"no-repeat")
+					ctx.fillStyle=pattern;
+					ctx.fillRect(0,0,600,400)
+				}
+			} 
 </script>
 </html>
