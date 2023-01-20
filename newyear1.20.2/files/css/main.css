@@ -457,7 +457,7 @@ body {
 
 .type_words {
     padding: 60px 60px 20px 0px;
-    background: url(../../beijin.jpg) repeat;
+    background: url(../../beijin.png) repeat;
     background-size: contain;
 /*    background-color: rgba(0,0,0,0.5)*/
 /*background-size: cover;*/
@@ -469,7 +469,7 @@ body {
     left: 10px;
     z-index: 500;
     color: #000000;
-    font-size: 3px;
+    font-size: 14px;
     
 }
 
