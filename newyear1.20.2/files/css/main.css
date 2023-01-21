@@ -457,11 +457,11 @@ body {
 
 .type_words {
     padding: 60px 60px 20px 0px;
-    background: url(beijin.png) repeat;
+    background: url(beijin.png);
     background-size: contain;
 /*    background-color: rgba(0,0,0,0.5)*/
 /*background-size: cover;*/
-    opacity: 0.5;
+    opacity: 0.7;
     width: 150px;
     height: 250px;
     position: absolute;
